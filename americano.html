@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kopiid</title>
+    <title>americano</title>
+    <style>
+      img {
+        width: 300px; /* Atur lebar gambar */
+        height: auto; /* Biarkan tinggi otomatis sesuai rasio aslinya */
+      }
+    </style>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +25,7 @@
 
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menudetail.css" />
     <link rel="stylesheet" href="css/scrolltotop.css" />
   </head>
 
@@ -39,41 +46,23 @@
     </nav>
     <!-- Navbar end -->
 
-    <!-- Contact Section start -->
-    <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-        provident.
-      </p>
-
-      <div class="row">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.25766445682!2d112.63028257412972!3d-7.275441719483738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1713794678748!5m2!1sid!2sid"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="map"
-        ></iframe>
-
-        <form action="">
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
-          </div>
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
-          </div>
-          <button type="submit" class="btn">kirim pesan</button>
-        </form>
+    <!-- Menu Detail Section start -->
+    <section id="menu-detail" class="menu-detail">
+      <div class="menu-detail-container">
+        <div class="menu-detail-img">
+          <img src="./img/menu/Caffe Americano.jpg" alt="Americano" />
+        </div>
+        <div class="menu-detail-content">
+          <h2>Americano</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            repellendus.
+          </p>
+          <p>Price: IDR 15K</p>
+        </div>
       </div>
     </section>
-    <!-- Contact Section end -->
+    <!-- Menu Detail Section end -->
 
     <!-- Footer start -->
     <footer>

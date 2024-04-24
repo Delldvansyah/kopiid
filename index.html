@@ -19,6 +19,8 @@
 
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href="css/scrollToTop.css" />
   </head>
 
   <body>
@@ -75,6 +77,76 @@
     </section>
     <!-- About Section end -->
 
+    <!-- Slideshow Section start -->
+    <section class="slideshow">
+      <!-- Tambahkan div untuk tulisan "Our Menu" -->
+      <div class="our-menu">
+        <a href="menu.html">Our Menu!</a>
+      </div>
+
+      <div class="slides">
+        <div class="slide menu-card" style="background-color: black">
+          <img src="img/menu/Caramel Macchiato.jpg" alt="Slide 1" />
+        </div>
+        <div class="slide menu-card" style="background-color: black">
+          <img src="img/menu/Cocoa Cappuccino.jpg" alt="Slide 2" />
+        </div>
+        <div class="slide menu-card" style="background-color: black">
+          <img src="img/menu/Ristretto Bianco.jpg" alt="Slide 3" />
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">
+        <i data-feather="chevrons-left"></i>
+      </button>
+      <button class="next" onclick="moveSlide(1)">
+        <i data-feather="chevrons-right"></i>
+      </button>
+    </section>
+    <!-- Slideshow Section end -->
+
+    <!-- Section baru start -->
+    <section class="section-baru">
+      <div class="row">
+        <div class="content">
+          <h2><span>Section</span> Baru</h2>
+          <p>
+            Ini adalah section baru dengan teks di sebelah kiri. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+            voluptatum dolor. Et, voluptatum accusantium!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+            deserunt iure amet facilis eos a quo cum voluptates molestias nihil.
+          </p>
+        </div>
+        <div class="section-img">
+          <img src="img/section-baru.jpg" alt="Section Baru" />
+        </div>
+      </div>
+    </section>
+    <!-- Section baru end -->
+
+    <!-- Section baru dengan teks di sebelah kanan -->
+    <section class="section-baru">
+      <div class="row">
+        <div class="section-img">
+          <img src="img/section-kanan.jpg" alt="Section Kanan" />
+        </div>
+        <div class="content">
+          <h2><span>Section</span> Baru</h2>
+          <p>
+            Ini adalah section baru dengan teks di sebelah kanan. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+            voluptatum dolor. Et, voluptatum accusantium!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+            deserunt iure amet facilis eos a quo cum voluptates molestias nihil.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer start -->
     <footer>
       <div class="socials">
@@ -90,41 +162,15 @@
       </div>
 
       <div class="credit">
-        <p>Created by <a href="">ava</a>. | &copy; 2024.</p>
+        <p>Created by <a href="">kopiid</a>. | &copy; 2024.</p>
       </div>
     </footer>
     <!-- Footer end -->
 
-    <!-- Modal Box Item Detail start -->
-    <div class="modal" id="item-detail-modal">
-      <div class="modal-container">
-        <a href="#" class="close-icon"><i data-feather="x"></i></a>
-        <div class="modal-content">
-          <img src="img/products/1.jpg" alt="Product 1" />
-          <div class="product-content">
-            <h3>Product 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Provident, tenetur cupiditate facilis obcaecati ullam maiores
-              minima quos perspiciatis similique itaque, esse rerum eius
-              repellendus voluptatibus!
-            </p>
-            <div class="product-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-            <a href="#"
-              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Box Item Detail end -->
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+      <i data-feather="chevrons-up"></i>
+    </button>
 
     <!-- Feather Icons -->
     <script>
@@ -133,5 +179,7 @@
 
     <!-- My Javascript -->
     <script src="js/script.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/scrollToTop.js"></script>
   </body>
 </html>

@@ -1,0 +1,73 @@
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5vw; /* Menggunakan viewport width untuk sudut */
+  padding-bottom: none; /* Tambahkan padding pada bagian bawah */
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+  transition: none;
+  border-radius: 2vw; /* Menggunakan viewport width untuk sudut */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-card {
+  background-color: black;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  z-index: 1;
+  transition: padding 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  padding: 1.8rem;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.our-menu {
+  position: absolute;
+  bottom: 5%; /* Menggunakan viewport height untuk posisi bottom */
+  left: 7%; /* Menggunakan viewport width untuk posisi left */
+  background-color: var(--primary);
+  padding: 1vw 2vw; /* Menggunakan viewport width untuk padding */
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 3.5vw; /* Menggunakan viewport width untuk ukuran teks */
+}
+
+.our-menu a {
+  color: white;
+  text-decoration: none; /* Optional: untuk menghapus garis bawah pada tautan */
+}
