@@ -142,7 +142,7 @@ body {
   display: inline-block;
   padding: 15px 30px; /* Mengatur ukuran padding untuk membuat tombol lebih besar */
   border-radius: 50px; /* Menggunakan nilai yang sesuai untuk membuat bentuk oval */
-  background-color: #4CAF50; /* Warna latar belakang tombol */
+  background-color: var(--primary); /* Warna latar belakang tombol */
   color: white; /* Warna teks tombol */
   text-align: center;
   text-decoration: none;

@@ -1,75 +1,77 @@
 .about-title {
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 main {
-    padding-right: 900px;
-    text-align: left;
+  padding-right: 900px;
+  text-align: left;
 }
 
 .about-content {
-    padding-top: 125px;
-    text-align: left;
+  padding-top: 125px;
+  text-align: left;
 }
 
 .gbr_kopi {
-    padding-left: 110px;
-    padding-bottom: 20px;
+  padding-left: 110px;
+  padding-bottom: 20px;
+}
+
+span {
+  color: var(--primary);
 }
 
 article {
-    padding-left: 110px;
+  padding-left: 110px;
 }
 
 .ul .li {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .our-story {
-    padding: 20px;
-    border-radius: 5px;
-
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .our-story h2 {
-    color: #006633;
-    font-size: 28px;
-    margin-bottom: 20px;
+  color: var(--primary);
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .our-story h3 {
-    color: #006633;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .our-story p {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .our-story a {
-    color: #006633;
-    text-decoration: none;
+  color: var(--primary);
+  text-decoration: none;
 }
 
 .our-story a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
