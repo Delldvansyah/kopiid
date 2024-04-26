@@ -152,7 +152,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #45a049; /* Warna latar belakang tombol saat dihover */
+  background-color: transparent; /* Warna latar belakang tombol saat dihover */
 }
 
 .hero .content h1 span {
@@ -280,8 +280,17 @@ body {
 }
 
 .section-baru .row .section-img img {
-  width: 100%;
-  border-radius: 10px;
+  width: 90%; /* Mengurangi lebar gambar menjadi 90% dari lebar kontainer */
+  max-width: 100%; /* Menjaga proporsi gambar agar tidak melebihi lebar kontainer */
+  border-radius: 20px;
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--primary); /* Warna coklat */
+  width: 70%;
+  margin: 4rem auto; /* Atur jarak atas dan bawah sesuai keinginan */
 }
 
 /* Footer */
@@ -404,6 +413,14 @@ footer .credit a {
     font-size: 1.2rem;
   }
 
+  .section-baru .row {
+    flex-direction: column; /* Mengubah orientasi menjadi vertical pada layar kecil */
+  }
+
+  .section-baru .row .content {
+    margin-bottom: 2rem; /* Menambahkan jarak antar item */
+  }
+
   .contact .row {
     flex-wrap: wrap;
   }
@@ -421,5 +438,9 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .section-baru .row .section-img img {
+    max-width: 100%; /* Mengisi lebar layar penuh */
   }
 }
