@@ -17,7 +17,15 @@
 }
 
 .menu a:hover::after {
-  transform: scaleX(0.5);
+  transform: scaleX(0.4);
+}
+
+.section-divider-menu {
+  border: none;
+  height: 1px;
+  background-color: var(--primary); /* Warna coklat */
+  width: 30%;
+  margin: 4rem auto; /* Atur jarak atas dan bawah sesuai keinginan */
 }
 
 .menu h2,

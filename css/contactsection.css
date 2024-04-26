@@ -1,3 +1,11 @@
+.section-divider-contact {
+  border: none;
+  height: 1px;
+  background-color: var(--primary); /* Warna coklat */
+  width: 30%;
+  margin: 4rem auto; /* Atur jarak atas dan bawah sesuai keinginan */
+}
+
 .contact p {
   text-align: center;
 }
